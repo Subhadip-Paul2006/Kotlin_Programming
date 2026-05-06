@@ -1,162 +1,235 @@
-# 🟣 Kotlin Classes & Objects Ultimate Master Guide
-## From Zero to Deep OOP Understanding 🚀
+# 🟣 Kotlin OOP Ultimate Master Guide
+# Classes, Objects, Constructors, Inheritance, Polymorphism, Abstraction & More 🚀
 
-> Ye documentation future-proof way me likha gaya hai.
-> Agar tum ise 10 saal baad bhi kholo,
-> toh sirf ek baar padhkar Classes aur Objects deeply samajh jaoge.
+> 📌 Goal of This Documentation:
+>
+> Ye guide itni deeply aur simply explain karegi ki:
+>
+> - Agar tum beginner ho → tab bhi samajh jaoge
+> - Agar tum future me revise karoge → ek baar me yaad aa jayega
+> - Agar tum interview doge → concepts crystal clear honge
+> - Agar tum Android ya Software Development karoge → foundation strong hoga
 
 ---
 
 # 📚 Table of Contents
 
-- [📌 Introduction](#-introduction)
-- [🧠 What is OOP?](#-what-is-oop)
-- [🏠 Real Life Analogy](#-real-life-analogy)
-- [🔥 What is a Class?](#-what-is-a-class)
-- [🔥 What is an Object?](#-what-is-an-object)
-- [🟣 Creating Your First Class](#-creating-your-first-class)
-- [🟢 Creating Objects](#-creating-objects)
-- [📦 Properties and Functions](#-properties-and-functions)
-- [🏗 Constructors in Kotlin](#-constructors-in-kotlin)
-- [🟡 Primary Constructor](#-primary-constructor)
-- [🟠 Secondary Constructor](#-secondary-constructor)
-- [🧠 Constructor Flow](#-constructor-flow)
-- [👨‍👦 Parent Class and Child Class](#-parent-class-and-child-class)
-- [🧬 Superclass and Subclass](#-superclass-and-subclass)
-- [🔗 Relationship Between Parent and Child](#-relationship-between-parent-and-child)
-- [🟣 Inheritance in Kotlin](#-inheritance-in-kotlin)
-- [🟢 IS-A vs HAS-A Relationship](#-is-a-vs-has-a-relationship)
-- [🎭 Polymorphism](#-polymorphism)
-- [🔄 Function Overriding](#-function-overriding)
-- [📦 Encapsulation](#-encapsulation)
-- [🎭 Abstraction](#-abstraction)
-- [🔐 Visibility Modifiers](#-visibility-modifiers)
-- [🧠 Delegate and by Keyword](#-delegate-and-by-keyword)
-- [🏠 Smart Home Real World Project Structure](#-smart-home-real-world-project-structure)
-- [📌 Complete Final Example](#-complete-final-example)
-- [🧠 Final Revision Notes](#-final-revision-notes)
-- [🏁 Conclusion](#-conclusion)
+1. [📌 Introduction](#-introduction)
+2. [🧠 What is Programming Paradigm?](#-what-is-programming-paradigm)
+3. [🔥 What is OOP?](#-what-is-oop)
+4. [🏠 Real World Understanding of OOP](#-real-world-understanding-of-oop)
+5. [🟣 What is a Class?](#-what-is-a-class)
+6. [🟢 What is an Object?](#-what-is-an-object)
+7. [📦 Difference Between Class and Object](#-difference-between-class-and-object)
+8. [🏗 Creating Your First Class](#-creating-your-first-class)
+9. [⚡ Properties and Functions](#-properties-and-functions)
+10. [🏗 Constructors in Kotlin](#-constructors-in-kotlin)
+11. [🟡 Primary Constructor](#-primary-constructor)
+12. [🟠 Secondary Constructor](#-secondary-constructor)
+13. [🔄 Constructor Flow](#-constructor-flow)
+14. [👨‍👦 Parent Class and Child Class](#-parent-class-and-child-class)
+15. [🧬 Superclass and Subclass](#-superclass-and-subclass)
+16. [🟣 Inheritance in Kotlin](#-inheritance-in-kotlin)
+17. [🔗 Relationship Between Classes](#-relationship-between-classes)
+18. [🟢 IS-A vs HAS-A Relationship](#-is-a-vs-has-a-relationship)
+19. [🎭 Polymorphism](#-polymorphism)
+20. [🔄 Function Overriding](#-function-overriding)
+21. [📦 Encapsulation](#-encapsulation)
+22. [🎭 Abstraction](#-abstraction)
+23. [🔐 Visibility Modifiers](#-visibility-modifiers)
+24. [🧠 Delegate and by Keyword](#-delegate-and-by-keyword)
+25. [🏠 Smart Home Real World Example](#-smart-home-real-world-example)
+26. [📌 Final Complete Example](#-final-complete-example)
+27. [🧠 Final Revision Table](#-final-revision-table)
+28. [🏁 Conclusion](#-conclusion)
 
 ---
 
 # 📌 Introduction
 
-Kotlin ek modern programming language hai jo:
+Kotlin ek modern programming language hai jo mainly:
 - Android Development
-- Backend Development
+- Backend Systems
 - Desktop Apps
-- Scalable Software Systems
+- Enterprise Applications
 
 banane ke liye use hoti hai.
 
-Kotlin ka sabse important concept hai:
+Kotlin ka sabse important topic hai:
 
 # 🔥 Object Oriented Programming (OOP)
 
-Aur OOP ka foundation hai:
+Agar OOP strong hai:
+✅ Coding easy lagegi  
+✅ Real-world systems samajh aaenge  
+✅ Large applications banana easy hoga  
 
-- Classes
-- Objects
-- Inheritance
-- Encapsulation
-- Polymorphism
-- Abstraction
-
-Agar ye concepts clear ho gaye,
-toh advanced development easy lagne lagega.
+Agar OOP weak hai:
+❌ Complex systems confusing lagenge  
+❌ Architecture samajhna mushkil hoga  
 
 ---
 
-# 🧠 What is OOP?
+# 🧠 What is Programming Paradigm?
 
-OOP ka full form:
+Programming Paradigm ka matlab hota hai:
 
-```text
-Object Oriented Programming
+> "Programming karne ka style ya approach."
+
+Different paradigms:
+- Procedural Programming
+- Functional Programming
+- Object Oriented Programming
+- Declarative Programming
+
+Kotlin multiple paradigms support karta hai,
+but sabse commonly:
+
+# 🔥 OOP
+
+use hota hai.
+
+---
+
+# 🔥 What is OOP?
+
+# 📖 Technical Definition
+
+> Object Oriented Programming (OOP) ek programming paradigm hai jisme software ko objects ke form me design aur organize kiya jata hai.
+
+---
+
+# 🧠 Simplified Definition
+
+> OOP ka matlab:
+>
+> Real-world cheezo ko programming objects ki form me represent karna.
+
+---
+
+# 📱 Real World Example
+
+Real world me:
+- Car
+- Mobile
+- Student
+- Bank Account
+- Camera
+
+sabke:
+- properties hoti hain
+- behaviors hote hain
+
+Programming me bhi hum exactly same idea use karte hain.
+
+---
+
+# 🟣 Example
+
+## Car
+
+### Properties
+- color
+- speed
+- brand
+
+### Behaviors
+- start()
+- brake()
+- accelerate()
+
+Programming me:
+```kotlin
+class Car
 ```
 
----
-
-# 🎯 OOP Ka Main Goal
-
-Real-world problems ko:
-- objects
-- classes
-- behaviors
-
-ke form me represent karna.
+ban sakta hai.
 
 ---
 
-# 📱 Real Life Example
+# 🎯 Main Goal of OOP
 
-Tumhara mobile phone:
+OOP ka main goal:
+- code reusable banana
+- code organized banana
+- real-world modeling karna
+- complexity reduce karna
 
-contains:
-- camera
-- speaker
-- battery
-- display
-- apps
+---
 
-Sab alag objects ki tarah work karte hain.
+# 🏠 Real World Understanding of OOP
 
-OOP bhi exactly same idea follow karta hai.
+Imagine:
+Tum ek Smart City bana rahe ho.
+
+Usme:
+- cars
+- buildings
+- traffic lights
+- cameras
+- people
+
+sab different entities hain.
+
+Agar sabko random variables me handle karoge:
+❌ impossible ho jayega.
+
+Isliye:
+hum har entity ko:
+```text
+Object
+```
+banate hain.
+
+Aur us object ka design:
+```text
+Class
+```
+ke through define karte hain.
+
+---
+
+# 🟣 What is a Class?
+
+# 📖 Technical Definition
+
+> Class ek blueprint/template hota hai jo objects ki structure aur behavior define karta hai.
+
+---
+
+# 🧠 Simplified Definition
+
+> Class ek design hota hai jisse objects bante hain.
 
 ---
 
 # 🏠 Real Life Analogy
 
-Imagine tum ek ghar bana rahe ho.
+## Blueprint Example
 
----
+Architect ghar banane se pehle:
+ek blueprint banata hai.
 
-# 🟣 Blueprint
-
-Architect ek design banata hai.
-
-Usme:
+Blueprint define karta hai:
 - rooms
+- doors
 - kitchen
-- bathroom
 - windows
 
-sab defined hota hai.
-
 But:
-⚠ Ye actual ghar nahi hota.
+⚠ Blueprint actual ghar nahi hota.
 
----
-
-# 🟢 Actual House
-
-Jab blueprint ke according ghar ban jata hai:
-
-wo hota hai:
-
+Wo sirf:
 ```text
-Object
+design
 ```
 
----
+hota hai.
 
-# 📌 Mapping
-
-| Real World | Programming |
-|---|---|
-| Blueprint | Class |
-| House | Object |
-
----
-
-# 🔥 What is a Class?
-
-Class ek blueprint hota hai.
-
-Ye define karta hai:
-- properties
-- behaviors
-- structure
+Programming me:
+```text
+Class = Blueprint
+```
 
 ---
 
@@ -174,13 +247,34 @@ Abhi:
 
 ---
 
-# 🔥 What is an Object?
+# 🟢 What is an Object?
 
-Object class ka actual instance hota hai.
+# 📖 Technical Definition
+
+> Object class ka runtime instance hota hai jo actual data aur behavior hold karta hai.
 
 ---
 
-# 🟢 Example
+# 🧠 Simplified Definition
+
+> Object class ka real usable version hota hai.
+
+---
+
+# 🏠 Real Life Example
+
+Blueprint se jab actual ghar ban jaye:
+
+wo:
+```text
+Object
+```
+
+hai.
+
+---
+
+# 🟣 Example
 
 ```kotlin
 val student1 = Student()
@@ -191,18 +285,32 @@ Yaha:
 student1
 ```
 
-ek real object hai.
+actual object hai.
 
 ---
 
-# 🧠 Important Line
+# 📦 Difference Between Class and Object
 
-> Class blueprint hota hai.
-> Object us blueprint ka actual real instance hota hai.
+| Class | Object |
+|---|---|
+| Blueprint | Actual instance |
+| Design | Real thing |
+| Memory nahi leta | Memory leta |
+| Logical entity | Physical entity |
 
 ---
 
-# 🟣 Creating Your First Class
+# 🧠 Memory Understanding
+
+Class:
+❌ memory occupy nahi karti directly
+
+Object:
+✅ runtime me memory leta hai
+
+---
+
+# 🏗 Creating Your First Class
 
 ```kotlin
 class Student {
@@ -218,15 +326,25 @@ class Student {
 
 ---
 
-# 📦 Properties and Functions
+# ⚡ Properties and Functions
 
 ---
 
 # 🟢 Property
 
-Property data store karti hai.
+# 📖 Definition
 
-Example:
+> Variable jo class ke andar hota hai.
+
+---
+
+# 🧠 Simplified
+
+> Object ka data.
+
+---
+
+# 🟣 Example
 
 ```kotlin
 var name = "Subh"
@@ -234,11 +352,21 @@ var name = "Subh"
 
 ---
 
-# 🟣 Function
+# 🟢 Function
 
-Function behavior define karta hai.
+# 📖 Definition
 
-Example:
+> Function object ka behavior define karta hai.
+
+---
+
+# 🧠 Simplified
+
+> Object kya kaam karega.
+
+---
+
+# 🟣 Example
 
 ```kotlin
 fun study(){
@@ -248,42 +376,26 @@ fun study(){
 
 ---
 
-# 🟢 Creating Objects
-
-```kotlin
-val student1 = Student()
-```
-
----
-
-# 🔥 Accessing Property
-
-```kotlin
-println(student1.name)
-```
-
----
-
-# 🔥 Calling Function
-
-```kotlin
-student1.study()
-```
-
----
-
 # 🏗 Constructors in Kotlin
 
-Constructor object create hote time initialize karta hai.
+# 📖 Technical Definition
+
+> Constructor ek special function hota hai jo object creation ke time automatically call hota hai.
 
 ---
 
-# 📌 Purpose of Constructor
+# 🧠 Simplified Definition
 
-Constructor ka kaam:
-- initial values dena
-- object setup karna
-- object ready banana
+> Constructor object ko initial values dene ke liye use hota hai.
+
+---
+
+# 🎯 Purpose of Constructor
+
+Constructor ka purpose:
+- object initialize karna
+- initial setup karna
+- values assign karna
 
 ---
 
@@ -299,7 +411,7 @@ class Student(val name: String)
 
 ---
 
-# 🟢 Creating Object
+# 🟢 Object Creation
 
 ```kotlin
 val s1 = Student("Subh")
@@ -307,22 +419,28 @@ val s1 = Student("Subh")
 
 ---
 
-# 🧠 Flow
+# 🧠 Understanding
+
+Jab object create hua:
+constructor automatically run hua.
+
+---
+
+# 🔄 Constructor Flow
 
 ```mermaid
 flowchart TD
 
-A[Class Student] --> B[Object Created]
-B --> C[Constructor Called]
-C --> D[Value Assigned]
-D --> E[Object Ready]
+A[Object Create] --> B[Constructor Call]
+B --> C[Assign Initial Values]
+C --> D[Object Ready]
 ```
 
 ---
 
 # 🟠 Secondary Constructor
 
-Kotlin me multiple constructors bhi ho sakte hain.
+Kotlin multiple constructors allow karta hai.
 
 ---
 
@@ -344,34 +462,41 @@ class Student {
 
 ---
 
-# 🧠 Constructor Flow
-
-```mermaid
-sequenceDiagram
-
-participant User
-participant Constructor
-participant Object
-
-User->>Constructor: Create Object
-Constructor->>Object: Assign Values
-Object-->>User: Ready to Use
-```
-
----
-
 # 👨‍👦 Parent Class and Child Class
 
-Ye OOP ka MOST IMPORTANT concept hai.
+Ye inheritance ka core concept hai.
 
 ---
 
 # 🟣 Parent Class
 
-Parent class:
-- common features provide karti hai
+# 📖 Definition
 
-Example:
+> Wo class jisse dusri class inherit karti hai.
+
+---
+
+# 🧠 Simplified
+
+> Common features dene wali class.
+
+---
+
+# 🟢 Child Class
+
+# 📖 Definition
+
+> Wo class jo parent class ki properties/functions inherit karti hai.
+
+---
+
+# 🧠 Simplified
+
+> Parent ki abilities use karne wali class.
+
+---
+
+# 🟣 Example
 
 ```kotlin
 open class Animal {
@@ -387,23 +512,8 @@ open class Animal {
 
 # 🟢 Child Class
 
-Child class:
-- parent ki features inherit karti hai
-
 ```kotlin
 class Dog : Animal()
-```
-
----
-
-# 🧠 Relationship
-
-```mermaid
-flowchart TD
-
-Animal --> Dog
-Animal --> Cat
-Animal --> Lion
 ```
 
 ---
@@ -417,92 +527,42 @@ Animal --> Lion
 
 ---
 
-# 📌 Example
+# 🔄 Relationship Flow
 
-```kotlin
-open class Vehicle
+```mermaid
+flowchart TD
+
+Animal --> Dog
+Animal --> Cat
+Animal --> Lion
 ```
-
-Ye:
-```text
-Superclass
-```
-
----
-
-```kotlin
-class Car : Vehicle()
-```
-
-Ye:
-```text
-Subclass
-```
-
----
-
-# 🔗 Relationship Between Parent and Child
-
----
-
-# 🟢 Parent Class Provides
-
-- common properties
-- common functions
-- reusable logic
-
----
-
-# 🟣 Child Class Gets
-
-- inherited behavior
-- inherited properties
-
----
-
-# 📌 Real Life Example
-
-```text
-Animal
- ├── Dog
- ├── Cat
- └── Lion
-```
-
-Sab animals:
-- eat karte hain
-- breathe karte hain
-
-Toh common behavior parent class me likha gaya.
 
 ---
 
 # 🟣 Inheritance in Kotlin
 
+# 📖 Technical Definition
+
+> Inheritance ek mechanism hai jisme ek class dusri class ki properties aur behaviors acquire karti hai.
+
+---
+
+# 🧠 Simplified Definition
+
+> Ek class dusri class ki powers use karti hai.
+
+---
+
+# 🎯 Purpose of Inheritance
+
 Inheritance:
-> ek class dusri class ki abilities use karti hai.
+- code reuse karta hai
+- repeated code kam karta hai
+- maintainability improve karta hai
 
 ---
 
-# 🔥 Syntax
-
-```kotlin
-class Child : Parent()
-```
-
----
-
-# 🧠 Why Inheritance Important?
-
-Without inheritance:
-❌ repeated code
-
-With inheritance:
-✅ reusable code
-
----
-
-# 🟢 Full Example
+# 🟢 Example
 
 ```kotlin
 open class Animal {
@@ -514,21 +574,42 @@ open class Animal {
 }
 
 class Dog : Animal()
-
-fun main(){
-
-    val dog = Dog()
-
-    dog.eat()
-
-}
 ```
 
-Output:
+---
 
-```bash
-Eating...
+# 🔗 Relationship Between Classes
+
+---
+
+# 🟣 Parent → Child
+
+Parent:
+- common features provide karta hai
+
+Child:
+- specialized behavior add karta hai
+
+---
+
+# 🧠 Real Life Example
+
+```text
+Vehicle
+ ├── Car
+ ├── Bike
+ └── Truck
 ```
+
+Sab vehicles:
+- move karte hain
+- speed rakhte hain
+
+Toh common features:
+```text
+Vehicle
+```
+me define kiye gaye.
 
 ---
 
@@ -565,20 +646,21 @@ Car HAS-A Engine
 | IS-A | HAS-A |
 |---|---|
 | Inheritance | Composition |
-| Parent-child relation | Containment relation |
+| Parent-child relation | Ownership relation |
 
 ---
 
 # 🎭 Polymorphism
 
-Polymorphism ka meaning:
+# 📖 Technical Definition
 
-```text
-Many Forms
-```
+> Polymorphism ek concept hai jisme same interface/function multiple forms me behave karta hai.
 
-Same function:
-- different behaviors
+---
+
+# 🧠 Simplified Definition
+
+> Same cheez different behavior dikhati hai.
 
 ---
 
@@ -618,15 +700,6 @@ class Cat : Animal(){
 
 ---
 
-# 🔥 Output
-
-```bash
-Bark
-Meow
-```
-
----
-
 # 🧠 Understanding
 
 Same function:
@@ -636,11 +709,24 @@ sound()
 
 Different outputs de raha hai.
 
+Ye:
+# 🔥 Polymorphism
+
+hai.
+
 ---
 
 # 🔄 Function Overriding
 
-Child class parent function ko modify kar sakti hai.
+# 📖 Definition
+
+> Child class parent function ko modify kar sakti hai.
+
+---
+
+# 🧠 Simplified
+
+> Existing behavior ko customize karna.
 
 ---
 
@@ -652,17 +738,17 @@ override fun sound()
 
 ---
 
-# 🧠 Why Override Useful?
+# 📦 Encapsulation
 
-Specialized behavior dene ke liye.
+# 📖 Technical Definition
+
+> Data aur methods ko ek single unit/class me wrap karna encapsulation kehlata hai.
 
 ---
 
-# 📦 Encapsulation
+# 🧠 Simplified Definition
 
-Encapsulation ka matlab:
-
-> data + functions ko ek class ke andar wrap karna.
+> Related cheezo ko ek box/class ke andar rakhna.
 
 ---
 
@@ -684,22 +770,32 @@ class BankAccount {
 
 # 🎭 Abstraction
 
-Abstraction:
-> internal details hide karna.
+# 📖 Technical Definition
+
+> Internal implementation details ko hide karke sirf essential features expose karna abstraction kehlata hai.
 
 ---
 
-# 📱 Example
+# 🧠 Simplified Definition
 
-Camera app use karte waqt:
-tumhe:
-- lens physics
-- sensor logic
+> User ko sirf important cheez dikhana.
 
-nahi pata hota.
+---
 
-Bas:
-photo click karte ho.
+# 📱 Real Life Example
+
+Camera use karte waqt:
+tum:
+- sensor physics
+- image processing
+
+nahi dekhte.
+
+Sirf:
+```text
+Capture Button
+```
+use karte ho.
 
 ---
 
@@ -712,88 +808,44 @@ Visibility modifiers decide karte hain:
 
 # 📌 Types
 
-| Modifier | Meaning |
+| Modifier | Access |
 |---|---|
 | public | everywhere |
-| private | only inside class |
+| private | same class |
 | protected | class + subclass |
 | internal | same module |
 
 ---
 
-# 🟣 public
-
-```kotlin
-class Student {
-
-    public var name = "Subh"
-
-}
-```
-
-Sab access kar sakte.
-
----
-
-# 🔴 private
+# 🟣 private Example
 
 ```kotlin
 private var password = "1234"
 ```
 
-Sirf same class me access hoga.
+Outside access:
+❌ not possible
 
 ---
 
-# 🟡 protected
+# 🧠 Why Visibility Modifiers Important?
 
-```kotlin
-protected var data = 10
-```
+Because:
+- security
+- encapsulation
+- controlled access
 
-Subclass bhi access kar sakta.
-
----
-
-# 🟢 internal
-
-Same module/project ke andar access hota.
-
----
-
-# 🧠 Visibility Flow
-
-```mermaid
-flowchart TD
-
-A[public] --> B[Everywhere]
-
-C[private] --> D[Only Same Class]
-
-E[protected] --> F[Class + Child Class]
-
-G[internal] --> H[Same Module]
-```
+provide karte hain.
 
 ---
 
 # 🧠 Delegate and by Keyword
 
-Delegate reusable behavior provide karta hai.
+Delegate reusable logic provide karta hai.
 
 ---
 
-# 🟣 by Keyword
-
-```kotlin
-by
-```
-
-delegate use karta hai.
-
----
-
-# 🟢 Example
+# 🟣 Example
 
 ```kotlin
 val name by lazy {
@@ -803,54 +855,49 @@ val name by lazy {
 
 ---
 
-# 🧠 lazy Meaning
+# 🧠 Meaning
 
 Value tab create hogi:
 > jab first time use hogi.
 
 ---
 
-# 🏠 Smart Home Real World Project Structure
+# 🏠 Smart Home Real World Example
 
 Imagine:
 ```text
 Smart Home App
 ```
 
----
-
-# 🟣 Classes
-
+Classes:
 - Light
 - Fan
 - AC
-- TV
 
----
-
-# 🟢 Objects
-
+Objects:
 - Bedroom Light
-- Kitchen Fan
 - Hall AC
 
 ---
 
-# 🧠 Flow
+# 🔄 Structure Flow
 
 ```mermaid
 flowchart TD
 
-A[Smart Device Class]
+A[Smart Device]
 
-A --> B[Bedroom Light]
-A --> C[Kitchen Fan]
-A --> D[Hall AC]
+A --> B[Light]
+A --> C[Fan]
+A --> D[AC]
+
+B --> E[Bedroom Light]
+B --> F[Kitchen Light]
 ```
 
 ---
 
-# 📌 Complete Final Example
+# 📌 Final Complete Example
 
 ```kotlin
 open class Animal(val name: String){
@@ -886,69 +933,52 @@ fun main(){
 
 ---
 
-# 🔥 Output
-
-```bash
-Tommy says Bark
-Tommy is eating
-```
-
----
-
-# 🧠 Final Revision Notes
+# 🧠 Final Revision Table
 
 | Concept | Meaning |
 |---|---|
 | Class | Blueprint |
 | Object | Real Instance |
 | Constructor | Initializes object |
-| Property | Variable inside class |
-| Function | Behavior |
 | Parent Class | Base class |
-| Child Class | Inherited class |
+| Child Class | Derived class |
 | Superclass | Parent |
 | Subclass | Child |
 | Inheritance | Reusing parent features |
-| Polymorphism | Same function, different forms |
+| Polymorphism | Same method, different forms |
 | Encapsulation | Wrapping data + methods |
-| Abstraction | Hiding implementation |
-| Visibility Modifier | Access control |
-| Delegate | Reusable property behavior |
+| Abstraction | Hiding complexity |
+| Visibility Modifiers | Access control |
 
 ---
 
 # 🏁 Conclusion
 
-Agar tumne ye documentation deeply samajh liya:
+Agar tumne ye pura documentation deeply samajh liya:
 
 toh tum:
+- OOP
 - Classes
 - Objects
 - Constructors
-- Parent & Child Classes
-- Superclass & Subclass
 - Inheritance
-- Encapsulation
-- Abstraction
 - Polymorphism
-- Visibility Modifiers
-- Delegates
+- Abstraction
+- Encapsulation
 
-sab concepts deeply samajh jaoge.
+deeply samajh jaoge.
 
 Aur future me:
 - Android Development
 - Backend
-- Game Development
 - Software Architecture
 
-sab easy lagne lagega 🚀
+bahut easy lagne lagega 🚀
 
 ---
 
 # ❤️ Golden Final Line
 
-> Classes software ka blueprint hoti hain,
-> aur objects un blueprints ki real working entities hoti hain.
+> OOP real-world cheezo ko software objects me convert karne ka art hai.
 
 ---
