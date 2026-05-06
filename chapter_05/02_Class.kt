@@ -1,6 +1,11 @@
 package chapter_05
 
-class SmartDevice02 {
+class SmartDevice {
+
+    val name = "Android TV"
+    val category = "Entertainment"
+    var deviceStatus = "online"
+
     fun turnOn() {
         println("Smart device is turned on.")
     }
@@ -8,10 +13,4 @@ class SmartDevice02 {
     fun turnOff() {
         println("Smart device is turned off.")
     }
-}
-
-fun main() {
-    val smartTvDevice = SmartDevice02()
-    smartTvDevice.turnOn()
-    smartTvDevice.turnOff()
 }
